@@ -32,8 +32,6 @@ components.html(js, height=100) #, key="speech_recognition")
 def on_text_update():
     if "data" in st.session_state:
         text.text("You said: " + st.session_state["data"])
-    else:
-        text.text("I heard nothing")
 
 # Display recognized text
 text = st.empty()
